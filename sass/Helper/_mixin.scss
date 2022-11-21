@@ -1,0 +1,18 @@
+@mixin styleText ($fs, $fw, $color){
+    font-size: $fs;
+    font-weight: $fw;
+    color: $color;
+}
+
+@mixin styleBTN ($bg,$border,$radius,$pd-y, $pd-x){
+    background: $bg;
+    border: $border;
+    border-radius: $radius;
+    padding: $pd-y $pd-x;
+}
+
+@mixin styleBTNHover($bg-hover, $border-hover, $color-hover){
+    background: $bg-hover;
+    border: $border-hover;
+    color: $color-hover;
+}
