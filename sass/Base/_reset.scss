@@ -6,5 +6,5 @@
 
 html, body{
     font-family: 'Roboto', sans-serif;
-    @include styleText ($fs-1, $fw-1, $color-white-1);
+    @include styleText ($fs-0, $fw-1, $color-1);
 }

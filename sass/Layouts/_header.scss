@@ -1,4 +1,37 @@
+body{
+    // position: relative;
+    width: 75%;
+    margin: auto;
+}
 header{
-    background: url(./img/yellow_top_wave_01.png);
-    @include styleText
+    // position: absolute;
+    width: 80%;
+    margin: auto;
+    .navbar{
+        padding: 0;
+    }
+ 
+    .container{
+        a{
+            img{
+                width: 80px;
+                height: 80px;
+            }
+        }
+        .nav-item{
+            @include styleText ($fs-1, $fw-3, $color-1);
+            padding-left: $pd-1;
+            .nav-link{
+                padding: 0;
+                color:$color-1;
+                &:hover{
+                    color: $color-3;
+                }
+            }
+            
+        }
+        .header_right{
+            padding-left: $pd-1;
+        }
+    }
 }

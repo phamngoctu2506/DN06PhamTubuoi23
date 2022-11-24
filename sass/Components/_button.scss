@@ -1,0 +1,8 @@
+.buttonStyle{
+    @include styleBTN(transparent, $bd-1 solid $color-2, $bd-2, $pd-3, $pd-4);
+    @include styleText($fs-1, $fw-2, $color-2);
+    transition: all 0.5s;
+    &:hover{
+        @include styleBTNHover($color-2, $bd-1 solid $color-2, $color-3)
+    }
+}

@@ -1,0 +1,16 @@
+.carousel{
+    background: url(./img/yellow_top_wave_01.png);
+    width: 80%;
+    margin: auto;
+    .carousel_content{
+        margin-top: 60px
+    }
+    .carousel_left{
+        h4{
+            @include styleText ($fs-5, $fw-3, $color-3);
+        }
+        .span{
+            @include styleText ($fs-6, $fw-3, $color-4);
+        }
+    }
+}
