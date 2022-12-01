@@ -1,15 +1,23 @@
 .carousel{
-    background: url(./img/yellow_top_wave_01.png);
-    width: 80%;
-    margin: auto;
+    background-image: url(./../img/yellow_top_wave_01.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: $pd-7 0 $pd-7 0;
     .carousel_content{
-        margin-top: 60px
+        width: 85%;
+        margin: auto;
+      
     }
     .carousel_left{
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: $mg-6;
         h4{
             @include styleText ($fs-5, $fw-3, $color-3);
+            margin-bottom: 0.5rem;
+            margin-top: 5rem;
         }
-        .span{
+        span{
             @include styleText ($fs-6, $fw-3, $color-4);
         }
     }

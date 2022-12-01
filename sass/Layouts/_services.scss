@@ -1,13 +1,36 @@
 .services{
-    background: url(./img/Violet_top_left_wave.png);
+    background-image: url(./../img/Violet_top_left_wave.png);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: left;
+    .bg_item{
+        padding: 15px;
+    }
     .services_item{
         background: #fff;
         text-align: center;
         border-radius: 20px;
-        
+        padding: 0;
+        // box-shadow: 10px 10px;
+        transition: all 0.5s;
+        &:hover{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .services_text{
+            padding: 0 28px;
+        }
         img{
-            width: 280px;
+            width: 100%;
             height: 190px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            transform: scale(100%);
+            transition: all 0.5s;
+
+            &:hover{
+                transform: scale(105%);
+                overflow: hidden;
+            }
         }
         h5{
             @include styleText ($fs-2, $fw-3, $color-3);
@@ -18,6 +41,7 @@
         }
         p{
             @include styleText ($fs-7, $fw-2, $color-1);
+            padding-bottom: 30px;
         }
     }
 }
