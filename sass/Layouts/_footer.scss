@@ -1,9 +1,9 @@
 footer{
     background-image: url(./../img/footer_background.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: bottom left;
-    padding: $pd-2 0;
+    padding-bottom: $pd-2 * 2;
         .footer_content{
             width: 65%;
             margin: auto;
@@ -11,13 +11,51 @@ footer{
                 padding: 0 $pd-4;
                 h3{
                     @include styleText ($fs-3, $fw-3, $color-2);
+                    margin-bottom: $mg-1;
+                }
+                .form_ft{
+                    width: 80%;
+                    height: auto;
+                    border: $bd-1 solid $color-3;
+                    background: #aa017e;
+                    padding: 12px;
+                    &::placeholder{
+                        color: $color-2;
+                    }
+                    &:focus{
+                        border: $bd-1 solid $color-2;
+                        box-shadow: none;
+                    }
+                }
+                button{
+                    padding: 12px 50px;
+                        border-radius: 40px;
+                        background: $color-3;
+                        border: $bd-1 solid $color-3;
+                        margin: 6px;
+                        color: $color-2;
+                        transition: all 0.5s;  
+                        &:hover{
+                            color: $color-3;
+                            background: $color-2;
+                        }
                 }
                 ul{
                     list-style: none;
-                    a{
-                        @include styleText ($fs-4, $fw-2, $color-2);
-                        text-decoration: none;
-                        
+                    li{
+                        margin-bottom: 10px;
+                        span{
+                            a{
+                                margin-right: 10px;
+                                &:hover{
+                                    color: $color-4;
+                                }
+                            }
+                        }
+                        a{
+                            @include styleText ($fs-4, $fw-2, $color-2);
+                            text-decoration: none;
+                        }
                     }
                 }
             }

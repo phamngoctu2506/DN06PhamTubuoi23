@@ -4,4 +4,69 @@
     background-size: 100%;
     background-position: bottom left;
     padding: $pd-2 0;
+    .container{
+        .contact_content{
+            width: 90%;
+            margin: auto;
+            margin: auto;
+            .contact_left{
+                img{
+                    width: 525px;
+                    height: auto;
+                }
+            }
+            .contact_right{
+                background: #fff;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                border-radius: 10px;
+                .form_contact{
+                    padding: 25px 25px;
+                    span{
+                        font-size: $fs-8;
+                        font-weight: $fw-3;
+                        text-align: center;
+                    }
+                    .row{
+                        margin-top: 20px;
+                        color: $color-3;
+                        .col{
+                            margin-bottom: 20px;
+                            height: 25px;
+                        }
+
+                    }
+                    .form-control{
+                        height: auto;
+                        transition: all 0.3s;
+                        &:focus{
+                            color: #495057;
+                            background-color: #fff;
+                            border-color: #b61984;
+                            outline: 0;
+                            box-shadow: 0 0 0 0.2rem rgb(195 184 187 / 16%);
+                        }
+                    }
+                    textarea{
+                        border-radius: 15px;
+                    }
+                    button{
+                        padding: 12px 50px;
+                        border-radius: 40px;
+                        background: $color-3;
+                        border: $bd-1 solid $color-3;
+                        margin: 6px;
+                        color: $color-2;
+                        transition: all 0.5s;  
+                        transform: scale(1);   
+                        &:hover{
+                            color: $color-3;
+                            background: $color-2;
+                            transform: scale(1);   
+                            background: transparent;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

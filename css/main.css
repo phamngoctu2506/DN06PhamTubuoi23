@@ -72,9 +72,8 @@ header .container .collapse .header_right a {
   color: #191919;
   transition: all 0.2s;
 }
-header .container .collapse .header_right ahover {
+header .container .collapse .header_right a:hover {
   color: #b61984;
-  z-index: 1000;
 }
 
 .carousel {
@@ -108,8 +107,8 @@ header .container .collapse .header_right ahover {
 .services {
   background-image: url(./../img/Violet_top_left_wave.png);
   background-repeat: no-repeat;
-  background-size: 200%;
-  background-position: left;
+  background-size: 100%;
+  background-position: top right;
 }
 .services .bg_item {
   padding: 15px;
@@ -164,13 +163,73 @@ header .container .collapse .header_right ahover {
   background-position: bottom left;
   padding: 120px 0;
 }
+.contact .container .contact_content {
+  width: 90%;
+  margin: auto;
+  margin: auto;
+}
+.contact .container .contact_content .contact_left img {
+  width: 525px;
+  height: auto;
+}
+.contact .container .contact_content .contact_right {
+  background: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+}
+.contact .container .contact_content .contact_right .form_contact {
+  padding: 25px 25px;
+}
+.contact .container .contact_content .contact_right .form_contact span {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+.contact .container .contact_content .contact_right .form_contact .row {
+  margin-top: 20px;
+  color: #b61984;
+}
+.contact .container .contact_content .contact_right .form_contact .row .col {
+  margin-bottom: 20px;
+  height: 25px;
+}
+.contact .container .contact_content .contact_right .form_contact .form-control {
+  height: auto;
+  transition: all 0.3s;
+}
+.contact .container .contact_content .contact_right .form_contact .form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #b61984;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(195, 184, 187, 0.16);
+}
+.contact .container .contact_content .contact_right .form_contact textarea {
+  border-radius: 15px;
+}
+.contact .container .contact_content .contact_right .form_contact button {
+  padding: 12px 50px;
+  border-radius: 40px;
+  background: #b61984;
+  border: 1px solid #b61984;
+  margin: 6px;
+  color: #ffffff;
+  transition: all 0.5s;
+  transform: scale(1);
+}
+.contact .container .contact_content .contact_right .form_contact button:hover {
+  color: #b61984;
+  background: #ffffff;
+  transform: scale(1);
+  background: transparent;
+}
 
 footer {
   background-image: url(./../img/footer_background.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: bottom left;
-  padding: 120px 0;
+  padding-bottom: 240px;
 }
 footer .footer_content {
   width: 65%;
@@ -183,11 +242,48 @@ footer .footer_content .ft_item h3 {
   font-size: 1.5rem;
   font-weight: 700;
   color: #ffffff;
+  margin-bottom: 30px;
+}
+footer .footer_content .ft_item .form_ft {
+  width: 80%;
+  height: auto;
+  border: 1px solid #b61984;
+  background: #aa017e;
+  padding: 12px;
+}
+footer .footer_content .ft_item .form_ft::placeholder {
+  color: #ffffff;
+}
+footer .footer_content .ft_item .form_ft:focus {
+  border: 1px solid #ffffff;
+  box-shadow: none;
+}
+footer .footer_content .ft_item button {
+  padding: 12px 50px;
+  border-radius: 40px;
+  background: #b61984;
+  border: 1px solid #b61984;
+  margin: 6px;
+  color: #ffffff;
+  transition: all 0.5s;
+}
+footer .footer_content .ft_item button:hover {
+  color: #b61984;
+  background: #ffffff;
 }
 footer .footer_content .ft_item ul {
   list-style: none;
 }
-footer .footer_content .ft_item ul a {
+footer .footer_content .ft_item ul li {
+  margin-bottom: 10px;
+}
+footer .footer_content .ft_item ul li span a {
+  margin-right: 10px;
+}
+footer .footer_content .ft_item ul li span a:hover {
+  color: #191919;
+}
+footer .footer_content .ft_item ul li a {
   font-size: 0.9rem;
   font-weight: 400;
   color: #ffffff;

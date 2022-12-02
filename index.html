@@ -159,47 +159,53 @@
         </div>
     </section>
     <div class="contact">
-        <div class="container row">
-            <div class="contact_left col-7">
-                <img src="./img/conatct_inner.png" alt="hình ảnh contact">
-            </div>
-            <div class="contact_right col-5">
-                <form>
-                    <span>Find Your Course</span>
-                    <div class="row">
-                        <div class="col">
-                            <input type="text"
-                                class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                                placeholder="Name">
+        <div class="container">
+            <div class="row contact_content">
+                <div class="contact_left col-7">
+                    <img src="./img/conatct_inner.png" alt="hình ảnh contact">
+                </div>
+                <div class="contact_right col-5">
+                    <form class="form_contact">
+                        <span class="mt-3">Find Your Course</span>
+                        <div class="row">
+                            <div class="col">
+                                <input type="text"
+                                    class="form-control rounded-pill"
+                                    placeholder="Name">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control rounded-pill" placeholder="E-mail">
+                            </div>
                         </div>
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="E-mail">
+                        <div class="form-group">
+                            <select class="form-control rounded-pill mt-3" id="exampleFormControlSelect1">
+                                <option id="chonKV1">English</option>
+                                <option id="chonKV2">French</option>
+                                <option id="chonKV3">Spanish</option>
+                                <option id="chonKV4">German</option>
+                            </select>
                         </div>
-                    </div>
-                    <input type="text" class="form-control mt-3" placeholder="English">
-                    <textarea class="form-control mt-3" id="exampleFormControlTextarea1" rows="3"
-                        placeholder="Messenger"></textarea>
-                    <button class="rounded-pill px-5 py-2 mt-3 border border-danger">SEND</button>
-                </form>
+                        <textarea class="form-control mt-4" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Messenger"></textarea>
+                        <button class="rounded-pill mt-5">SEND</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-    <footer>
-        
+    <footer> 
             <div class="footer_content row">
                 <div class="ft_item col-3">
                     <h3>Contact us</h3>
                     <ul>
-                        <li><a href="#"><i class="fa fa-map-marker-alt"></i>Franklin St, Greenpoint Ave</a></li>
-                        <li><a href="#"><i class="fab fa-accusoft"></i>+2342 5446 67</a></li>
-                        <li><a href="#"><i class="fab fa-accusoft"></i>Monday - Friday: 8 AM - 5 PM</a></li>
+                        <li><a href="#"><i class="fa fa-map-marker-alt"></i> Franklin St, Greenpoint Ave</a></li>
+                        <li><a href="#"><i class="fab fa-accusoft"></i> +2342 5446 67</a></li>
+                        <li><a href="#"><i class="fab fa-accusoft"></i> Monday - Friday: 8 AM - 5 PM</a></li>
                         <li>
-    
                             <span><a href="#"><i class="fab fa-twitter"></i></a></span>
                             <span><a href="#"><i class="fab fa-instagram"></i></a></span>
                             <span><a href="#"><i class="fab fa-facebook-f"></i></a></span>
                             <span><a href="#"><i class="fab fa-youtube"></i></a></span>
-    
                         </li>
                     </ul>
                 </div>
@@ -224,8 +230,8 @@
                 <div class="ft_item col-3">
                     <h3>Newsletter</h3>
                     <form>
-                        <input type="text" class="form-control mt-3 rounded-pill" placeholder="English">
-                        <button class="rounded-pill px-5 py-2 mt-3 border border-danger">SEND</button>
+                        <input type="text" class="form-control mt-3 rounded-pill form_ft" placeholder="            Your mail">
+                        <button class="rounded-pill mt-3 border border-danger">SUBCRIBE</button>
                     </form>
                 </div>
             </div>
