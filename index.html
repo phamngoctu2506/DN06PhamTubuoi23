@@ -24,44 +24,47 @@
 
 <body>
     <header>
-        <nav class="container navbar navbar-expand-lg navbar-light d-flex justify-content-between">
-            <a class="navbar-brand" href="#"><img src="./img/crest.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent" data-spy="scroll"
-                data-target="#navbar-example2" data-offset="0">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Courses</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Shop</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Elements</a>
-                    </li>
-                </ul>
-                <div class="d-flex justify-content-between header_right">
-                    <div class="btn_header"><button><i class="fa fa-phone"></i> (+1) 555 234-8765</button></div>
-                    <a href="https://twitter.com/bold_themes"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.facebook.com/boldthemes/"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.youtube.com/channel/UCPL5LgX32KsbQ1i9nV-xiKA"><i
-                            class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+        <div class="header" id="myHeader">
+            <nav class="container navbar navbar-expand-lg navbar-light d-flex justify-content-between">
+                <a class="navbar-brand" href="#"><img src="./img/crest.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse content" id="navbarSupportedContent" data-spy="scroll"
+                    data-target="#navbar-example2" data-offset="0">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Elements</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex justify-content-between header_right">
+                        <div class="btn_header"><button><i class="fa fa-phone"></i> (+1) 555 234-8765</button></div>
+                        <a href="https://twitter.com/bold_themes"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/boldthemes/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.youtube.com/channel/UCPL5LgX32KsbQ1i9nV-xiKA"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
+        
     </header>
     <section class="carousel">
         <div class="container carousel_content row">
@@ -247,15 +250,19 @@
         crossorigin="anonymous"></script> -->
     <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
     <script>
-        $(document).ready(function () {
-            $(window).scroll(function() {
-                if (($this).scrollTop()) {
-                    $('header').addClass('sticky');
-                    // alert('ok');
-                }
-            });
-        });
-    </script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+        </script>
 </body>
 
 </html>

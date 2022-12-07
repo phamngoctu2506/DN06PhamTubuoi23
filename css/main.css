@@ -42,8 +42,14 @@ header {
   z-index: 1;
 }
 header .sticky {
-  color: #000;
-  background: #fff;
+  background-color: #ffffff;
+}
+header .sticky .navbar a img {
+  width: 0px;
+  height: 0px;
+}
+header .sticky .navbar .collapse .header_right .btn_header button {
+  padding: 6px 20px;
 }
 header .navbar {
   padding: 0;
@@ -88,10 +94,13 @@ header .container .collapse .header_right .btn_header button {
   margin: 6px;
   color: #ffffff;
   transition: all 0.2s;
+  box-shadow: 0 0 0 48px #b61984 inset;
 }
 header .container .collapse .header_right .btn_header button:hover {
   color: #b61984;
-  background: #ffffff;
+  box-shadow: 0 0 0 1px #b61984 inset;
+  background: #fff;
+  transition: all 0.3s ease;
 }
 header .container .collapse .header_right a {
   line-height: 4.2;
@@ -134,9 +143,9 @@ header .container .collapse .header_right a:hover {
 
 .services {
   background-image: url(./../img/Violet_top_left_wave.png);
+  background-size: cover;
+  background-position: left center;
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: top right;
 }
 .services .bg_item {
   padding: 15px;
@@ -243,13 +252,13 @@ header .container .collapse .header_right a:hover {
   margin: 6px;
   color: #ffffff;
   transition: all 0.5s;
-  transform: scale(1);
+  box-shadow: 0 0 0 48px #b61984 inset;
 }
 .contact .container .contact_content .contact_right .form_contact button:hover {
   color: #b61984;
   background: #ffffff;
-  transform: scale(1);
-  background: transparent;
+  box-shadow: 0 0 0 1px #b61984 inset;
+  transition: all 0.3s ease;
 }
 
 footer {
@@ -289,15 +298,18 @@ footer .footer_content .ft_item .form_ft:focus {
 footer .footer_content .ft_item button {
   padding: 12px 50px;
   border-radius: 40px;
-  background: #b61984;
+  background: #ffffff;
   border: 1px solid #b61984;
   margin: 6px;
-  color: #ffffff;
+  color: #b61984;
   transition: all 0.5s;
+  box-shadow: 0 0 0 48px #fff inset;
 }
 footer .footer_content .ft_item button:hover {
-  color: #b61984;
-  background: #ffffff;
+  color: #ffffff;
+  background: #b61984;
+  box-shadow: 0 0 0 1px #fff inset;
+  transition: all 0.3s ease;
 }
 footer .footer_content .ft_item ul {
   list-style: none;

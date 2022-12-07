@@ -57,12 +57,12 @@
                         margin: 6px;
                         color: $color-2;
                         transition: all 0.5s;  
-                        transform: scale(1);   
+                        box-shadow: 0 0 0 48px #b61984 inset;
                         &:hover{
                             color: $color-3;
-                            background: $color-2;
-                            transform: scale(1);   
-                            background: transparent;
+                            background: $color-2;                         
+                            box-shadow: 0 0 0 1px #b61984 inset;
+                            transition: all 0.3s ease;
                         }
                     }
                 }
