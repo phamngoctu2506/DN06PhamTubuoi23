@@ -7,4 +7,22 @@
 html, body{
     font-family: 'Roboto', sans-serif;
     @include styleText ($fs-0, $fw-1, $color-1);
+    /* bổ sung cho  thư viện */
+    
+
+}
+.animate__fadeIn{
+    animation-delay: 400ms;
+}
+.animate__delay-500s{
+    animation-delay: 0.5s;
+}
+.animate__delay-1000s{
+    animation-delay: 1s;
+}
+.animate__delay-1500s{
+    animation-delay: 1.5s;
+}
+.animate__delay-2000s{
+    animation-delay: 2s;
 }

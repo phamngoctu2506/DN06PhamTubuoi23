@@ -1,8 +1,14 @@
 header{
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     margin: auto;
     z-index: 1;
+    .sticky{
+        color: #000;
+        background: #fff;
+    }
     .navbar{
         padding: 0;
     }
