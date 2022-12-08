@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +9,11 @@ html, body {
   font-size: 15px;
   font-weight: 300;
   color: #181818;
-  /* bổ sung cho  thư viện */
+}
+
+.container {
+  width: 1400px;
+  margin: auto;
 }
 
 .animate__fadeIn {
@@ -33,6 +36,17 @@ html, body {
   animation-delay: 2s;
 }
 
+@media screen and (max-width: 1200px) {
+  header .navbar .navbar-toggler {
+    position: absolute;
+    top: 24px;
+    left: -7%;
+  }
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+}
 header {
   position: fixed;
   top: 0;
@@ -274,6 +288,7 @@ footer .footer_content {
 }
 footer .footer_content .ft_item {
   padding: 0 40px;
+  padding-bottom: 50px;
 }
 footer .footer_content .ft_item h3 {
   font-size: 1.5rem;

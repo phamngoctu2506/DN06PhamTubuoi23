@@ -1,0 +1,19 @@
+
+@media screen and (max-width:1200px) {
+    header{
+        
+            .navbar {
+                .navbar-toggler{
+                    position: absolute;
+                    top: 24px;
+                    left: -7%;
+                    
+                }
+            }
+    }
+    .container{
+        width: 100%;
+        margin: auto;
+    }
+    // phần menu port và toggler và 1 số chỗ reponsive chưa kịp nên sẽ bổ sung sau
+}

@@ -7,9 +7,10 @@
 html, body{
     font-family: 'Roboto', sans-serif;
     @include styleText ($fs-0, $fw-1, $color-1);
-    /* bổ sung cho  thư viện */
-    
-
+}
+.container{
+    width: 1400px;
+    margin: auto;
 }
 .animate__fadeIn{
     animation-delay: 400ms;
